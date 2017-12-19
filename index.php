@@ -86,11 +86,11 @@ if(function_exists('simplepagehead')) {
 	<div class="container">	
 		<!-- logo -->
 		<div class="logo" id="logo">
-			<a href="<?php echo WB_URL; ?>"><img height="100px" src="<?php echo WB_URL; ?>/media/img/logo.png" title="<?php echo WEBSITE_TITLE; ?>" alt="" /></a>
+			<a href="<?php echo WB_URL; ?>"><img height="100px" src="<?php echo WB_URL; ?>/media/common_img/logo.png" title="<?php echo WEBSITE_TITLE; ?>" alt="" /></a>
 		</div>
 		<div class="logo-right">
-		    <p><img style="margin-bottom: 4px;" height="35px" src="<?php echo WB_URL; ?>/media/img/phone.png">+7 (86132) 5-03-48</p>
-		    <p><img style="margin-bottom: 4px;" height="35px" src="<?php echo WB_URL; ?>/media/img/phone.png">+7 (928) 430-15-45</p>
+		    <p><img style="margin-bottom: 4px;" height="35px" src="<?php echo WB_URL; ?>/media/common_img/phone.png">+7 (999)  999-99-99</p>
+		    <p><img style="margin-bottom: 4px;" height="35px" src="<?php echo WB_URL; ?>/media/common_img/phone.png">+7 (999) 888-88-88</p>
 		</div>
 
 	<!-- logo -->
