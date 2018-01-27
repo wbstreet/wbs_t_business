@@ -1,5 +1,5 @@
 <style>
-    /* ==== Таблица ============= */
+    /* ==== РўР°Р±Р»РёС†Р° ============= */
     .table_cell {
         display: inline-block;
         margin-top: 10px;
@@ -13,7 +13,7 @@
         width:69%;
     }
 
-    /* ==== Форма ============= */
+    /* ==== Р¤РѕСЂРјР° ============= */
 
     .headform .right_cell input {
         width: 40%;
@@ -23,7 +23,7 @@
     }
     
     @media(max-width:600px) {
-        /* ==== Таблица ============= */
+        /* ==== РўР°Р±Р»РёС†Р° ============= */
         .left_cell {
             width:100%;
             text-align: left;
@@ -31,7 +31,7 @@
         .headform  .right_cell {
             width:100%;
 
-        /* ==== Форма ============= */
+        /* ==== Р¤РѕСЂРјР° ============= */
 
         }
         .headform  .right_cell input, .right_cell textarea {
@@ -45,36 +45,37 @@
     <p>&nbsp;</p>
     <div class='table' align="left" style="width:90%;">
 
-                <div class='table_cell left_cell'><h7>Ваше имя:</h7></div>
+                <div class='table_cell left_cell'><h7>Р’Р°С€Рµ РёРјСЏ:</h7></div>
                 <div class='table_cell right_cell'><input style="color: #000; border: 1px solid #183c32;" type="text" name="fio" required="required" size="35" /></div>
                 
                 <br>
 
-                <div class='table_cell left_cell'><h7>Ваш телефон:</h7></div>
+                <div class='table_cell left_cell'><h7>Р’Р°С€ С‚РµР»РµС„РѕРЅ:</h7></div>
                 <div class='table_cell right_cell'><input style="color: #000; border: 1px solid #183c32;" id="phone" type="tel" name="phone" required="required" pattern="+([0-9]{1}) ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" /></div>
                 
                 <br>
 
                 <div class='table_row'>
-                    <div class='table_cell left_cell'  style='vertical-align:middle;'><h7>Ваш вопрос:</h7></div>
+                    <div class='table_cell left_cell'  style='vertical-align:middle;'><h7>Р’Р°С€ РІРѕРїСЂРѕСЃ:</h7></div>
                     <div class='table_cell right_cell' style='vertical-align:middle;'><textarea style="color: #000; border: 1px solid #183c32;" rows="5" name="zayavka"></textarea></div>
                 </div>
                 
                 <br>
 
-                <div class='table_cell left_cell'><h7>Капча:</h7></div>
+                <div class='table_cell left_cell'><h7>РљР°РїС‡Р°:</h7></div>
                 <div class='table_cell right_cell'><?php call_captcha('image'); echo ' = '; call_captcha('input'); ?></div>
                 
 		<br>
 		
-		<div class='table_cell left_cell' style="color:#000; width:auto;"><input type='checkbox' name='i_agree' required="required" style='cursor:pointer;'></div>
-		<div class='table_cell right_cell' style="width:auto;"><h6>Согласен (на) с условиями <a onclick="W.open_by_api('get_agreement', {add_sheet:true})" style='cursor:pointer;'>Пользовательского соглашения</a></h6></div>
+		<div class='table_cell left_cell' style="color:#000; width:auto;"><input type='checkbox' name='i_agree' required="required" style='cursor:pointer;'></div>
+
+		<div class='table_cell right_cell' style="width:auto;"><h6>РЎРѕРіР»Р°СЃРµРЅ (РЅР°) СЃ СѓСЃР»РѕРІРёСЏРјРё <a onclick="W.open_by_api('get_agreement', {add_sheet:true})" style='cursor:pointer;'>РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРіРѕ СЃРѕРіР»Р°С€РµРЅРёСЏ</a></h6></div>
 
     </div>
     <table align="center" width="90%" border="0" cellpadding="1" cellspacing="1">
         <tbody>
             <tr>
-                <td width="100%" style="text-align: center;"><input type="submit" name="ok" class="btn-head" value="Отправить" /></td>
+                <td width="100%" style="text-align: center;"><input type="submit" name="ok" class="btn-head" value="РћС‚РїСЂР°РІРёС‚СЊ" /></td>
             </tr>
         </tbody>
     </table>
