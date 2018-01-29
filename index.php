@@ -49,7 +49,7 @@ if(function_exists('simplepagehead')) {
     <meta name="HandheldFriendly" content="true" />
     <meta name="MobileOptimized" content="320" />
 
-    <?php if(function_exists('wbs_core_include')) wbs_core_include(['functions.js', 'windows.js', 'windows.css']); ?>
+    <?php if(function_exists('wbs_core_include')) wbs_core_include(['functions.js', 'windows.js', 'windows.css', 'effects.css']); ?>
     <?php require_once(WB_PATH.'/include/captcha/captcha.php'); ?>
 </head>
 
