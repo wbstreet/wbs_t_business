@@ -180,7 +180,7 @@ window.onscroll = function () {
         li[i].areExpand=true;
     }
 	<?php } ?>
-    let g = new Gallery(document.querySelectorAll('.fm'));
+    let g = new Gallery(document.querySelectorAll('.fm'));
     if (W.zi) W.zi.add(document.getElementById('topnav'), 'top');
 </script>
 
