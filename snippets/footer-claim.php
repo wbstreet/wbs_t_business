@@ -11,7 +11,8 @@ if(!defined('WB_URL')) { header('Location: ../../../index.php'); exit(0); }
         <p>Телефон: 8 (86132) 5-03-48, +7 928 430 15 45, +7 961 582 39 23</br>Адрес: ул. Киевская, 6, офис 4, Ейск, Краснодарский край, 353690<p>
     </div>
     <div class="footer-claim-caption-right">
-		<a class="footer-claim-btn" onclick="W.open('feedback', {create_method:'clone'})">Написать нам</a>
+                <?php if (defined('CUSTOMSETTINGS_COUNTERS')) echo CUSTOMSETTINGS_COUNTERS; ?>
+                <a class="footer-claim-btn" onclick="W.open('feedback', {create_method:'clone'})">Написать нам</a>
 		<?php if (function_exists('echo_creator')) echo_creator();?>
 	</div>
 

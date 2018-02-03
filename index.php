@@ -142,21 +142,9 @@ include(__DIR__.'/snippets/form.php');
 echo "</div>";
 
 ?>		
-		
-		
-		
-		
-<!--		<div class="footer">
-			<div class="container">
-             	<?php if (function_exists('echo_creator')) echo_creator();?>
-                <?php/*include('counter.php');*/ ?>
-			</div>
-		</div>-->
-		<!-- /footer -->
-		
-		<script src="<?php echo TEMPLATE_DIR; ?>/js/bootstrap.min.js"></script>
+        <script src="<?php echo TEMPLATE_DIR; ?>/js/bootstrap.min.js"></script>
 
-    <!-- Для слайдера -->
+        <!-- Для слайдера -->
 	<script src="<?php echo WB_URL; ?>/include/added_js/responsiveslides.min.js"></script>
 		
 <script>
