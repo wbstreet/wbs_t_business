@@ -41,7 +41,7 @@
 </style>
 
 <div class="headform">
-    <form method="post" action="<?php echo WB_URL; ?>/send.php" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+    <form>
     <p>&nbsp;</p>
     <div class='table' align="left" style="width:90%;">
 
@@ -75,7 +75,9 @@
     <table align="center" width="90%" border="0" cellpadding="1" cellspacing="1">
         <tbody>
             <tr>
-                <td width="100%" style="text-align: center;"><input type="submit" name="ok" class="btn-head" value="Отправить" /></td>
+                <td width="100%" style="text-align: center;"><input type="button" class="btn-head" value="Отправить" onclick="sendform(this,
+ 'send_feedback',
+ {wb_captcha_img:this.closest('form').querySelector('img')});"></td>
             </tr>
         </tbody>
     </table>

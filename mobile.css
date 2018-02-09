@@ -17,7 +17,7 @@ html,body {
 .header {position:relative;}
 .breadcrumb {margin-top: 5px;margin-bottom: 5px;}
 .mt140 {display:none;}
-.mobile-btn-menu {display:block;}
+.button_show_mm {display:block;}
 .footer-claim-informer-text{display:none;}
 //.footer-claim-informer{display:none;}
 //.footer-claim-informer-m{

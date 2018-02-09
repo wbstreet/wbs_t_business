@@ -7,10 +7,25 @@ input, textarea {border-radius:5px;}
 /*.breadcrumb {
     margin-top:125px;
 }*/
-.navbar-mobile{display:none;}
-.mobile-btn-menu {display:none;}
-//.footer-claim-informer{display:block;}
-//.footer-claim-informer-m{display:none;}
+.navbar-mobile{display:none;}
+//.footer-claim-informer{display:block;}
+//.footer-claim-informer-m{display:none;}
+
+/* Mobile Navigation */
+.button_show_mm {
+    width: 50px;
+    cursor:pointer;
+    display:none;
+    padding: 0;
+    margin:0;
+}
+
+.button_show_mm div {
+    background: #ffffff;
+    width: 35px;
+    height: 5px;
+    margin: 5px auto 5px auto;
+}
 
 .col-md-3:hover {
     transform: scale(1.1);

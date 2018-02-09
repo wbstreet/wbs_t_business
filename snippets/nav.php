@@ -30,23 +30,26 @@ ob_end_clean();
 	
 ?>
 <header>
-	<div class="container">
-		<div class="row">
-			<a class="mobile-btn-menu" href="#" onclick="$('.navbar-default,.nav').toggle()"><img src="<?=WB_URL?>/media/img/mobile-menu.png"></a>
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="container-fluid">
-					<div class="menu">
-						<?php echo $topnav; ?>
-					</div>
-				</div>			
-			</nav>
+    <div class="container">
+        <div class="row">
+            <div class="button_show_mm" onclick="$('.navbar-default,.nav').toggle({duration:400})">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="menu">
+                        <?php echo $topnav; ?>
+                    </div>
+                </div>			
+            </nav>
 <!--			<nav class="navbar navbar-mobile" role="navigation">
-
 				<div class="menu">
 					<?php echo $topnav; ?>
 				</div>
 			</nav>
 -->
-		</div>
 	</div>
+    </div>
 </header>
