@@ -7,6 +7,15 @@ if(!defined('WB_URL')) {
 //Lets fetch some content for the slider from given page_ids:
 
 include(WB_PATH.'/templates/'.TEMPLATE."/config_template.php");
+include(WB_PATH."/modules/wbs_core/core/functions.php");
+
+$aObj = null;
+if (file_exists(WB_PATH."/modules/wbs_portal/lib.class.portal.php")) {
+    include(WB_PATH."/modules/wbs_portal/lib.class.portal.php");
+    $_clsModPortal = new _ModPortal('wbs_portal', null, null);
+    $aObj = $_clsModPortal->_get_obj();
+}
+
 
 $slider_page_ids = '3,4,5,6';
 $slider_image_base = WB_URL.'/media/slides/slide'; // added: number + .jpg
@@ -26,8 +35,8 @@ if(function_exists('simplepagehead')) {
 } else { ?>
     <title><?php page_title(); ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=<?php if(defined('DEFAULT_CHARSET')) { echo DEFAULT_CHARSET; } else { echo 'utf-8'; }?>" />
-    <meta name="description" content="<?php page_description(); ?>" />
-    <meta name="keywords" content="<?php page_keywords(); ?>" />
+    <meta name="description" content="<?php echo $aObj ? $aObj['seo_description'] : page_keywords(); ?>" />
+    <meta name="keywords" content="<?php echo $aObj ? $aObj['seo_keywords'] : page_keywords(); ?>" />
     <?php }
      if(function_exists('register_frontend_modfiles')) {
 	    register_frontend_modfiles('css');
