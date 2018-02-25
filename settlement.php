@@ -9,7 +9,7 @@
 </div>
 
 <script>
-var settlement = <?php echo isset($_COOKIE['settlement']) ? preg_replace('/[^0-9]/', '', $_COOKIE['settlement']) : 'undefined'; ?>;
+var settlement = <?php echo isset($_COOKIE['settlement']) ? preg_replace('/[^0-9]/', '', $_COOKIE['settlement']) : '1'; ?>;
 
 function setSetlT(settlement_id, self) {
     var res = self.id2settlementObj(settlement)
