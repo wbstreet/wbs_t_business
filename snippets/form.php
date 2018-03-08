@@ -51,7 +51,7 @@
                 <br>
 
                 <div class='table_cell left_cell'><h7>Ваш телефон:</h7></div>
-                <div class='table_cell right_cell'><input style="color: #000; border: 1px solid #183c32;" id="phone" type="tel" name="phone" required="required" pattern="+([0-9]{1}) ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" /></div>
+                <div class='table_cell right_cell'><input style="color: #000; border: 1px solid #183c32;" id="phone" type="tel" name="phone" required="required" pattern="+([0-9]{1}) ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"  autocomplete="tel-national"/></div>
                 
                 <br>
 
