@@ -7,7 +7,8 @@ if(!defined('WB_URL')) {
 //Lets fetch some content for the slider from given page_ids:
 
 include(WB_PATH.'/templates/'.TEMPLATE."/config_template.php");
-include(WB_PATH."/modules/wbs_core/core/functions.php");
+include(WB_PATH."/modules/wbs_core/core/functions.php");
+
 
 $aObj = null;
 if (file_exists(WB_PATH."/modules/wbs_portal/lib.class.portal.php")) {
@@ -153,9 +154,6 @@ echo "</div>";
 ?>		
         <script src="<?php echo TEMPLATE_DIR; ?>/js/bootstrap.min.js"></script>
 
-        <!-- Для слайдера -->
-	<script src="<?php echo WB_URL; ?>/include/added_js/responsiveslides.min.js"></script>
-		
 <script>
 window.onscroll = function () {
     /*var scrolled = window.pageYOffset || document.documentElement.scrollTop;
