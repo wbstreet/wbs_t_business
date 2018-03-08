@@ -12,9 +12,10 @@
 var settlement = <?php echo isset($_COOKIE['settlement']) ? preg_replace('/[^0-9]/', '', $_COOKIE['settlement']) : '1'; ?>;
 
 function setSetlT(settlement_id, self) {
-    var res = self.id2settlementObj(settlement)
-    document.getElementById('settlementTitle').textContent = self.obj2full_name(res, true)
-    self.sets['button_ss'].title = self.obj2full_name(res) + " (нажмите, чтобы изменить)";
+    self.id2settlementObj(settlement, {'func_success': function(res) {
+        document.getElementById('settlementTitle').textContent = self.obj2full_name(res['data'], true);
+        self.sets['button_ss'].title = self.obj2full_name(res['data']) + " (нажмите, чтобы изменить)";
+    }});
 }
  
 function set_global_settlement(settlement_id, self) {
