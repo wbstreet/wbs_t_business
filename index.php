@@ -24,8 +24,15 @@ $slider_image_base = WB_URL.'/media/slides/slide'; // added: number + .jpg
 $top_grids_page_ids = '7,8,9';
 
 $topics_picture_directory = WB_URL.'/media/grids';	
-	
-	
+
+
+/* Из стандартного шаблона */   
+
+if (!function_exists('LangPadeId')) {function LangPadeId(){return $iPageId;}}
+
+$iMultiLang = 0;$sMultiLang = ''; if (function_exists('language_menu')){$sMultiLang = language_menu('png',false); $iMultiLang = intval(!empty($sMultiLang) ? 1 : 0);}
+
+
 
 ?><!DOCTYPE html>
 <html>
@@ -99,18 +106,12 @@ if(function_exists('simplepagehead')) {
 			<a href="<?php echo WB_URL; ?>"><img height="100px" src="<?php echo WB_URL; ?>/media/common_img/logo.png" title="<?php echo WEBSITE_TITLE; ?>" alt="" /></a>
 		</div>
 		<div class="logo-right">
+                    <?php if(trim($sMultiLang)!=''){ echo $sMultiLang; } ?>
 		    <p><img style="margin-bottom: 4px;" height="35px" src="<?php echo WB_URL; ?>/media/common_img/phone.png">+7 (999)  999-99-99</p>
 		    <p><img style="margin-bottom: 4px;" height="35px" src="<?php echo WB_URL; ?>/media/common_img/phone.png">+7 (999) 888-88-88</p>
 		</div>
 
-	<!-- logo -->
-		<!-- top-nav -->
-<!--		<div class="header-info">
-		    <h1>8 (86132) 2-91-28</h1>
-		    <h3>г. Ейск, ул. Седина, 53/16<h3>
-		</div>
--->
-		<div class="top-nav" id="topnav2">
+          	<div class="top-nav" id="topnav2">
 			<span class="menu"> </span>						
 			<!--<?php //echo $topnav; ?>-->
 			<?php	include('snippets/nav.php');	?>

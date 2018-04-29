@@ -11,7 +11,7 @@ ob_start();
 $open = '<li data-id=[page_id] class="[if(class=menu-current||class=menu-parent){active}] [if(class==menu-expand){dropdown}]">
 	[if(class==menu-expand){<a href="[url]" class="dropdown-toggle" data-toggle="dropdown">[menu_title] <b class="caret"></b></a>}else {<a href="[url]">[menu_title]</a>}]';
 	show_menu2(
-		$aMenu          = 1,
+		$aMenu          = SM2_ALLMENU,
 		$aStart         = SM2_ROOT, 
 		$aMaxLevel      = SM2_CURR+3,
 		$aOptions       = SM2_ALL,
@@ -32,10 +32,14 @@ ob_end_clean();
 <header>
     <div class="container">
         <div class="row">
-            <div class="button_show_mm" onclick="$('.navbar-default,.nav').toggle({duration:400})">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="button_show_mm" onclick="$('.navbar-default,.nav').toggle({duration:400})">
+
+                <div></div>
+
+                <div></div>
+
+                <div></div>
+
             </div>
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
