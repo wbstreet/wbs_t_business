@@ -1,8 +1,6 @@
 <?php
-if(!defined('WB_URL')) {
-	header('Location: ../index.php');
-	exit(0);
-}	
+// Must include code to stop this file being accessed directly
+if (!defined('SYSTEM_RUN')) {header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found'); echo '404 File not found'; flush(); exit;}
 
 //Lets fetch some content for the slider from given page_ids:
 
@@ -29,13 +27,13 @@ $topics_picture_directory = WB_URL.'/media/grids';
 /* Из стандартного шаблона */   
 
 if (!function_exists('LangPadeId')) {function LangPadeId(){return $iPageId;}}
-
 $iMultiLang = 0;$sMultiLang = ''; if (function_exists('language_menu')){$sMultiLang = language_menu('png',false); $iMultiLang = intval(!empty($sMultiLang) ? 1 : 0);}
 
+$sPageLang    = strtolower(isset($wb->page) || ($wb instanceof frontend) ? $wb->page['language'] : 'EN');
 
 
 ?><!DOCTYPE html>
-<html>
+<html lang="<?php echo $sPageLang; ?>">
 <head>
 <?php
 if(function_exists('simplepagehead')) {
