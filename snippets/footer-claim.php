@@ -6,9 +6,8 @@ if(!defined('WB_URL')) { header('Location: ../../../index.php'); exit(0); }
 <div class="footer-claim-caption">
 	<!--<div class="container">-->
     <div class="footer-claim-caption-left">
-        <a href="<?=WB_URL?>" target="_blank"><img src="http://eps-m.ru/media/img/logo-f.png" height="50px" hspace="5" alt="" /></a>
         <h3 style="color:#fff; padding-left:10px; font-weight: 200;">СТРОИТЕЛЬНАЯ КОМПАНИЯ</h3><br>
-        <p>Телефон: 8 (86132) 5-03-48, +7 928 430 15 45, +7 961 582 39 23</br>Адрес: ул. Киевская, 6, офис 4, Ейск, Краснодарский край, 353690<p>
+        <p>Телефон: 8 (86132) 1-1-1, +7 928 111 11 11, +7 111 111 11 11</br>Адрес: ул. Киевская, 6, офис 4, минск, Краснодарский край, 353690<p>
     </div>
     <div class="footer-claim-caption-right">
                 <?php if (defined('CUSTOMSETTINGS_COUNTERS')) echo CUSTOMSETTINGS_COUNTERS; ?>

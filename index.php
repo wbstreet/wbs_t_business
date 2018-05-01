@@ -5,7 +5,7 @@ if (!defined('SYSTEM_RUN')) {header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found'
 //Lets fetch some content for the slider from given page_ids:
 
 include(WB_PATH.'/templates/'.TEMPLATE."/config_template.php");
-include(WB_PATH."/modules/wbs_core/core/functions.php");
+if (file_exists(WB_PATH."/modules/wbs_core/core/functions.php")) include(WB_PATH."/modules/wbs_core/core/functions.php");
 
 
 $aObj = null;
