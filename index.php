@@ -68,6 +68,11 @@ if(function_exists('simplepagehead')) {
     <?php require_once(WB_PATH.'/include/captcha/captcha.php'); ?>
 </head>
 
+<script>
+    var WB_URL = '<?php echo WB_URL ?>';
+    var PAGE_ID = '<?php echo PAGE_ID ?>';
+</script>
+
 <?php 
 	ob_start();		
 	page_content(1);
@@ -216,6 +221,8 @@ window.onscroll = function () {
     }
     <?php } ?>
 </style>
-		
+
+<?php register_frontend_modfiles_body('js'); ?>
+
 	</body>
 </html>

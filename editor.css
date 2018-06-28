@@ -23,6 +23,9 @@ a.about-btn:hover{
 	background:#26a5bd;
 }
 
+.section p {
+    font-size: 1.4em;
+}
 
 p { }
 
